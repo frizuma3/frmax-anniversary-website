@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>15 Years Priestly Anniversary | Felicitations & RSVP</title>
+  <meta name="description" content="Send your felicitations and RSVP for the 15th Priestly Anniversary celebration at St. Mary's RC Church, Beauly." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">✠ 15 Years of Grace</div>
+      <div class="nav-links">
+        <a href="#rsvp" class="nav-btn">RSVP</a>
+        <a href="#message" class="nav-btn">Write a Message</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Crystal Jubilee of Priestly Ordination</p>
+      <h1>Celebrating 15 Years of Priestly Ministry</h1>
+      <p class="subtitle">St. Mary's RC Church, Beauly, IV4 7AU. Mass begins at 12:00 Noon.</p>
+      <p class="subtitle">A page of thanksgiving, felicitations, prayers and goodwill messages from family, friends, parishioners and well-wishers.</p>
+
+      <div class="countdown-card" aria-label="Live countdown to the anniversary celebration">
+        <p>Live countdown to the anniversary celebration</p>
+        <div id="countdown" class="countdown-grid">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+        <small id="countdownDateLabel">Date can be edited in app.js</small>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#rsvp" class="primary-btn">Confirm Attendance</a>
+        <a href="#message" class="secondary-btn">Send Felicitation</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section two-col">
+      <div>
+        <p class="section-label">A priest forever</p>
+        <h2>With grateful hearts, we give thanks to God.</h2>
+        <p>Fifteen years of priestly ministry is a testimony of God’s grace, fidelity, sacrifice and loving service to His people. This anniversary page is created so that well-wishers can confirm attendance and leave prayers, memories, felicitations and congratulatory messages.</p>
+        <p>You may write a short message of thanksgiving, a personal memory, a blessing or a prayer for continued fruitfulness in the vineyard of the Lord.</p>
+      </div>
+      <div class="image-card">
+        <img src="images/FrMax1.jpeg" alt="Priestly anniversary image" onerror="this.style.display='none'; this.parentElement.classList.add('fallback-cross');" />
+      </div>
+    </section>
+
+    <section class="quote-band animated-verse">
+      <blockquote id="bibleVerse">“You are a priest forever, according to the order of Melchizedek.”</blockquote>
+      <span id="bibleReference">Psalm 110:4</span>
+    </section>
+
+    <section class="section music-section">
+      <div class="music-card">
+        <div>
+          <p class="section-label">Gregorian chants and Sacred Songs </p>
+          <h2>Sacred music & songs</h2>
+          <p>Use the button below to play or pause the Gregorian chants and songs. Browsers usually require visitors to press play before music can begin.</p>
+        </div>
+        <button id="musicToggle" class="primary-btn" type="button">Play Music</button>
+        <div class="music-player">
+          <button id="musicToggle" class="primary-btn" type="button">
+            Play Music
+          </button>
+
+          <button id="nextTrack" class="secondary-btn" type="button">
+            Next Track
+          </button>
+
+          <p id="nowPlaying" class="now-playing">
+            Sacred Songs Playlist
+          </p>
+
+          <audio id="chantAudio" preload="none"></audio>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section form-section">
+      <div class="form-intro">
+        <p class="section-label">Attendance</p>
+        <h2>RSVP for the anniversary celebration</h2>
+        <p>Please confirm whether you will attend. This helps with planning and organisation.</p>
+      </div>
+
+      <form id="rsvpForm" class="message-form">
+        <div class="field-group">
+          <label for="rsvpName">Your Name *</label>
+          <input id="rsvpName" name="name" type="text" placeholder="e.g. Emeka Fraser" required />
+        </div>
+        <div class="field-group">
+          <label for="rsvpEmail">Email, optional</label>
+          <input id="rsvpEmail" name="email" type="email" placeholder="your@email.com" />
+        </div>
+        <div class="field-group">
+          <label for="rsvpPhone">Phone, optional</label>
+          <input id="rsvpPhone" name="phone" type="tel" placeholder="Your phone number" />
+        </div>
+        <div class="field-group">
+          <label for="attendance">Will you attend? *</label>
+          <select id="attendance" name="attendance" required>
+            <option value="">Select one</option>
+            <option value="Yes, I will attend">Yes, I will attend</option>
+            <option value="No, I cannot attend">No, I cannot attend</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="guestCount">Number attending, including you</label>
+          <input id="guestCount" name="guest_count" type="number" min="0" max="20" placeholder="2" />
+        </div>
+        <div class="field-group">
+          <label for="rsvpLocation">Parish / City</label>
+          <input id="rsvpLocation" name="location" type="text" placeholder="e.g. St Mary’s, Beauly" />
+        </div>
+        <div class="field-group full">
+          <label for="rsvpNote">Short note, optional</label>
+          <textarea id="rsvpNote" name="note" rows="4" placeholder="Any short note for the organisers..."></textarea>
+        </div>
+        <button type="submit" class="primary-btn full-btn">Submit RSVP</button>
+        <p id="rsvpStatus" class="status"></p>
+      </form>
+    </section>
+
+    <section id="message" class="section form-section message-bg">
+      <div class="form-intro">
+        <p class="section-label">Leave a felicitation</p>
+        <h2>Write your congratulatory message</h2>
+        <p>Your message will be saved privately and viewed by the celebrant through the admin page.</p>
+      </div>
+
+      <form id="felicitationForm" class="message-form">
+        <div class="field-group">
+          <label for="name">Your Name *</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Fr. Max Nwosu" required />
+        </div>
+        <div class="field-group">
+          <label for="location">Parish / City / Country</label>
+          <input id="location" name="location" type="text" placeholder="e.g. St Mary’s, Beauly" />
+        </div>
+        <div class="field-group full">
+          <label for="email">Email, optional</label>
+          <input id="email" name="email" type="email" placeholder="your@email.com" />
+        </div>
+        <div class="field-group full">
+          <label for="messageText">Message *</label>
+          <textarea id="messageText" name="message" rows="7" placeholder="Write your felicitation, prayer or congratulatory message here..." required></textarea>
+        </div>
+        <button type="submit" class="primary-btn full-btn">Submit Message</button>
+        <p id="status" class="status"></p>
+      </form>
+    </section>
+
+    <section id="map" class="section map-section">
+      <div class="form-intro">
+        <p class="section-label">Location</p>
+        <h2>Parish / Church map</h2>
+        <p>St. Mary's RC Church, Beauly, IV4 7AU, Scotland, United Kingdom.</p>
+      </div>
+      <div class="map-card">
+        <iframe
+          title="Map to St Mary's RC Church Beauly IV4 7AU"
+          src="https://maps.google.com/maps?q=IV4%207AU&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed with gratitude for a 15th Priestly Anniversary Celebration.</p>
+    <a href="admin.html">Admin Login</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
