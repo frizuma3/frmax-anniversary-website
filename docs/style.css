@@ -233,6 +233,22 @@ textarea { resize: vertical; }
   padding: .65rem 1rem;
   cursor: pointer;
 }
+
+#rsvp,
+#felicitation {
+  text-align: center;
+}
+
+.rsvp-button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 14px 30px;
+  background-color: #d4af37;
+  color: #1f130d;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+}
 .empty { background: rgba(255,255,255,.65); padding: 1rem; border-radius: 1rem; }
 
 @media (max-width: 820px) {
