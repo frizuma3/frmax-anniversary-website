@@ -1,5 +1,6 @@
 {
-  "name": "priestly-anniversary-website",
+  "name": "frmax-anniversary-website",
+  "homepage": "https://anniversary.maxnwosu.com",
   "version": "1.0.0",
   "description": "15 years priestly anniversary felicitation website with admin message dashboard",
   "main": "server.js",
@@ -16,6 +17,7 @@
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "nodemon": "^3.1.0"
   }
 }
