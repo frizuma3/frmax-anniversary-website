@@ -68,7 +68,10 @@ const verseList = [
   { text: '“You are a priest forever, according to the order of Melchizedek.”', ref: 'Psalm 110:4' },
   { text: '“I will give you shepherds after my own heart.”', ref: 'Jeremiah 3:15' },
   { text: '“Feed the flock of God that is among you.”', ref: '1 Peter 5:2' },
-  { text: '“The harvest is plentiful, but the labourers are few.”', ref: 'Luke 10:2' }
+  { text: '“The harvest is plentiful, but the labourers are few.”', ref: 'Luke 10:2' },
+  { text: '“Yes, I know what plans I have in mind for you, Yahweh declares.”', ref: 'Jer. 29:11' },
+  { text: '“I have found David my servant and anoint him with my holy oil.”', ref: 'Psalm 89:20' },
+  { text: '“My help comes from the Lord who made heaven and earth.”', ref: 'Psalm 121:2' }
 ];
 
 let verseIndex = 0;
