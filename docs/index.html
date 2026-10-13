@@ -140,7 +140,7 @@
 
 
     
-    <section id="map" class="section map-section">
+    <section id="reception-map" class="section map-section">
       <div class="form-intro">
         <p class="section-label">Location</p>
         <h2>Reception Hall map</h2>
@@ -155,6 +155,25 @@
       </div>
     </section>
 
+    <section id="goodwill" class="section goodwill-section" aria-labelledby="goodwillHeading">
+      <div class="form-intro">
+        <p class="section-label">Words of love and encouragement</p>
+        <h2 id="goodwillHeading">Messages of Congratulations &amp; Goodwill</h2>
+        <p>Heartfelt wishes and prayers on 15 years of priestly ministry.</p>
+      </div>
+      <div class="goodwill-panel" id="goodwillPanel" aria-label="Rotating anniversary messages">
+        <div class="goodwill-quote" aria-hidden="true">“</div>
+        <blockquote class="goodwill-message" id="goodwillMessage">Loading messages…</blockquote>
+        <p class="goodwill-author" id="goodwillAuthor"></p>
+        <div class="goodwill-controls">
+          <button type="button" id="goodwillPrevious" aria-label="Previous message">&#8592;</button>
+          <span id="goodwillCounter" aria-live="off"></span>
+          <button type="button" id="goodwillNext" aria-label="Next message">&#8594;</button>
+        </div>
+      </div>
+      <p class="goodwill-hint">Messages advance automatically. Hover over a message to pause.</p>
+    </section>
+
   </main>
 
   <footer class="footer">
@@ -162,5 +181,6 @@
   </footer>
 
   <script src="app.js"></script>
+  <script src="felicitations.js"></script>
 </body>
 </html>
